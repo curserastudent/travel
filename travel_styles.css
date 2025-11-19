@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80")
+    no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  z-index: 0;
+  pointer-events: none;
+}
+body > * {
+  position: relative;
+  z-index: 1;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 30px;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+.navbar nav a:hover {
+  color: #ffd700;
+}
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 15px;
+}
+.navbar input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 5px;
+}
+.navbar button,
+#contact button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  background: #0c584c;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.navbar i {
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.navbar button:last-child {
+  background: #0c584c;
+  color: #fff;
+}
+.navbar button:hover {
+  background: #ffa500;
+}
+.intro {
+  color: #fff;
+  max-width: 600px;
+  margin: 100px auto 0 auto;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 2em;
+  transition: color 0.2s;
+}
+.social-icons a:hover {
+  color: #ffd700;
+}
+#contact input,
+textarea {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px #fff;
+  color: #fff;
+  margin-right: 5px;
+  background-color: transparent;
+}
+#contact button {
+  background: #0c584c;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Travel Explorer</title>
+    <link rel="stylesheet" href="travel_styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="navbar" style="display: flex; align-items: center; justify-content: space-between; padding: 5px 32px">
+      <div class="logo" style="flex: 1; display: flex; align-items: center">
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Logo" />
+        <span style="margin-left: 8px; font-weight: bold; font-size: 1.2em">TravelBloom</span>
+      </div>
+      <nav style="flex: 1; display: flex; justify-content: center; align-items: center; gap: 24px">
+        <a href="./travel_recommendation.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact Us</a>
+      </nav>
+      <div style="flex: 1; display: flex; justify-content: flex-end; align-items: center; gap: 8px"></div>
+    </div>
+
+    <div
+      class="social-icons"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-left: 0;
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        z-index: 1000;
+      ">
+      <div
+        style="
+          width: 2px;
+          height: 200px;
+          background: #fff;
+          margin-bottom: 15px;
+          margin-top: 0;
+          margin-left: 25px;
+        "></div>
+      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div
+      class="intro"
+      id="contact"
+      style="
+        text-align: left;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-left: 60px;
+      ">
+      <div style="flex: 2; display: flex; flex-direction: column; justify-content: flex-start">
+        <h1 style="margin-bottom: 24px; font-size: 60px; font-weight: 900">CONTACT US</h1>
+        <p>Get in touch</p>
+      </div>
+      <form style="flex: 2; max-width: 400px; margin: 0; text-align: left">
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+          style="width: 100%; padding: 8px; margin-bottom: 10px" /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          style="width: 100%; padding: 8px; margin-bottom: 10px" /><br />
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          placeholder="Enter your message"
+          style="width: 100%; padding: 8px; margin-bottom: 10px"></textarea
+        ><br />
+        <button type="submit" style="width: 100%">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
